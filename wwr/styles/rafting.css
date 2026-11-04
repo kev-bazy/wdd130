@@ -79,3 +79,11 @@ article {
     float: right;
     width: 125px;
 }
+
+nav {
+    background-color: darkblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,14 +1,15 @@
 :root {
-    --primary-color: #055a05;
-    /* forest green */
-    --secondary-color: #ccfbeb;
-    /* warm sand */
-    --accent1-color: #264653;
-    /* dark slate blue */
-    --accent2-color: #d8d8d8;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent1-color: #1d2d44;
+    --accent2-color: #e63946;
+    --heading-font: "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 * {
@@ -33,7 +34,6 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    background-color: var(--secondary-color);
 }
 
 nav,
@@ -48,6 +48,8 @@ article {
     text-decoration: none;
 }
 
+/* STEP 5 - Style the Hero Div with Overlays*/
+
 .hero {
     position: relative;
 }
@@ -58,7 +60,7 @@ article {
     height: auto;
 }
 
-.hero h1 {
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -71,19 +73,11 @@ article {
 }
 
 .hero article {
-    background-color: var(--accent2-color);
     position: absolute;
+
 }
 
 .hero article img {
     float: right;
     width: 125px;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
